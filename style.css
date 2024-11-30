@@ -1,0 +1,264 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #0f0f0f;
+  font-family: "Poppins", serif;
+
+}
+
+.container {
+  max-width: 390px;
+}
+.status-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 47px;
+  padding: 0 24px;
+}
+.left_side {
+  width: 54px;
+  height: 21px;
+  color: #ffffff;
+}
+.rigth_side {
+  display: flex;
+  gap: 8px;
+}
+.header__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.header__navbar {
+  display: flex;
+  align-items: center;
+
+  position: relative;
+}
+
+.navbar_text {
+  color: #ffffff;
+  margin-left: 25px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 26px;
+}
+.img_filters {
+  width: 20px;
+  height: 20px;
+}
+.body__games {
+  padding: 20px 18px;
+}
+.top__filters {
+  min-width: 211px;
+  max-height: 42px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 8px;
+  background-color: #282828;
+  padding-left: 12px;
+}
+.text_filters {
+  color: #c8c8c8;
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+}
+.button_filters {
+  background: #28b328;
+  padding: 4px 5px;
+  border-radius: 8px;
+  color: #ffffff;
+  font-weight: 600;
+  margin-left: 5px;
+}
+
+.body__filters {
+  display: flex;
+}
+.footer__filters {
+  display: flex;
+  gap: 22px;
+  margin-top: 16px;
+}
+.footer_select {
+  background: #333333;
+  width: 171px;
+  height: 42px;
+  gap: 0px;
+  border-radius: 8px;
+  border: transparent;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 11px;
+}
+.category__game {
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+  grid-template-rows: repeat(4, 4fr);
+  justify-items: center;
+  padding: 0 5px;
+  row-gap: 9px;
+  margin-bottom: 31px;
+}
+.game_items {
+  width: 112.67px;
+  height: 156px;
+
+  border-radius: 8px;
+}
+img {
+  width: 100%;
+  image-rendering: pixelated;
+}
+.button_game {
+  background: #333333;
+  color: #fafafa;
+  font-weight: 600;
+  font-size: 14px;
+  border: transparent;
+  border-radius: 8px;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  padding: 11px 30px;
+}
+.button_games {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.p_games {
+  color: white;
+  font-weight: 400;
+  font-size: 10px;
+}
+
+.footer__links {
+  display: flex; 
+  flex-wrap: wrap;
+  gap: 60px;
+
+  padding: 24px 0 0 19px;
+  min-height: 164px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column; 
+}
+
+.column a {
+  margin-bottom: 10px; 
+  text-decoration: none;
+
+  color: #e1e1e1;
+  font-weight: 400;
+  font-size: 10px;
+  text-decoration: none;
+  line-height: 13px;
+}
+
+.column a:last-child {
+  margin-bottom: 0; 
+}
+
+.legal_logos {
+  display: flex;
+ padding-right: 16px;
+
+  gap: 10px;
+}
+.legal {
+  display: flex; 
+  justify-content: space-between;
+  align-items: center; 
+  width: 100%; 
+}
+
+.legal_logos img {
+  max-width: 100%; 
+  height: auto; 
+}
+.legal_text p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffffff;
+}
+.legal_text {
+padding: 15px 20px;
+}
+.footer__link {
+  background-color: #1d1d1d;
+}
+hr {
+  margin: 0;
+}
+.copyrigth {
+  background-color: #0f0f0f;
+  text-align: center;
+padding: 20px 0 20px 0;
+}
+.copyrigth span {
+  font-weight: 400;
+  font-size: 10px;
+  color: #ffffff; 
+}
+.footer_navbotton{
+  display: flex;
+  padding: 14px 0 17px 28px;
+gap: 43px;
+}
+.footer_nav {
+  display: flex;
+  flex-direction: column;
+align-items: center;
+}
+.footer_nav span {
+  font-weight: 500;
+  font-size: 11px;
+  color: #ffffff;
+  margin: 0;
+}
+.footer__wrap {
+position: relative;
+  background-color: #1d1d1d;
+  margin-bottom: 25px;
+}
+.footer__wrap::after {
+  content: ""; 
+  display: block;
+  width: 35%;
+  height: 4px; 
+  background-color: white; 
+  position: absolute; 
+top: 92px;
+  left: 50%; 
+  transform: translateX(-50%);
+}
+
+
+.link {
+  position: relative;
+  
+}
+
+.link::before {
+  content: ""; 
+  display: block; 
+  width: 0; 
+  height: 2px; 
+  background-color: yellow; 
+  position: absolute;
+  top: -14px;
+  left: 50%; 
+  transition: width 0.3s ease, left 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.link:hover::before {
+  width: 60px;
+  left: 50%; 
+}
